@@ -10,11 +10,11 @@ You can whitelist selectors based on a regular expression with `whitelist`.
 const purgecss = new Purgecss({
     content: [], // content
     css: [], // css
-    whitelist: ['.random', '#yep', 'button']
+    whitelist: ['random', 'yep', 'button']
 })
 ```
 
- In the example, the selectors`.random`, `#yep`, `button` will be left in the final css.
+In the example, the selectors`.random`, `#yep`, `button` will be left in the final css.
 
 ## Patterns
 
@@ -30,7 +30,7 @@ const purgecss = new Purgecss({
 
 In the example, selectors ending with `red` such as `.bg-red` will be left in the final css.
 
-Patterns are regular expressions, you can use [regexr](https://regexr.com) to verify the regular expressions correspond to what you are looking for. 
+Patterns are regular expressions, you can use [regexr](https://regexr.com) to verify the regular expressions correspond to what you are looking for.
 
 ## In the css file
 
