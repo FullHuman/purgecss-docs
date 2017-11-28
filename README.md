@@ -1,5 +1,9 @@
 # Purgecss
 
+![](https://travis-ci.org/FullHuman/purgecss.svg?branch=master)![](https://circleci.com/gh/FullHuman/purgecss/tree/master.svg?style=shield)![](https://david-dm.org/fullhuman/purgecss/status.svg)![](https://david-dm.org/fullhuman/purgecss/dev-status.svg)![](https://api.codacy.com/project/badge/Grade/2f2f3fb0a5c541beab2018483e62a828)![](https://api.codacy.com/project/badge/Coverage/2f2f3fb0a5c541beab2018483e62a828)![](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)![](https://img.shields.io/github/license/fullhuman/purgecss.svg)
+
+---
+
 Purgecss is a tool to remove unused css. It can be used as part of your development workflow. Purgecss comes with a Javascript API, a CLI and plugins for popular build tools.
 
 Here are a couple of ways to use Purgecss:
@@ -44,7 +48,7 @@ npx purgecss --css <css> --content <content> [option]
 
 ## Javascript API
 
- Start by installing Purgecss as a development dependency.
+Start by installing Purgecss as a development dependency.
 
 ```
 npm i -D purgecss
@@ -146,8 +150,6 @@ rollup({
   ]
 })
 ```
-
-
 
 [^1]: If you want to use npx, npm 5.2.0+ must be installed.
 
