@@ -49,7 +49,7 @@ You can specified the content with an array of filename or glob \(see link\) tha
 
 ```js
 new Purgecss({
-    content: ['index.html', `**/*.js`, '**/*.html', **/*.vue],
+    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
     css: [`css/app.css`]
 }
 ```
@@ -63,7 +63,7 @@ new Purgecss({
             raw: '<html><body><div class="app"></div></body></html>',
             extension: 'html'
         },
-        `**/*.js`, '**/*.html', **/*.vue],
+        `**/*.js`, '**/*.html', '**/*.vue'],
     css: [`css/app.css`]
 }
 ```
