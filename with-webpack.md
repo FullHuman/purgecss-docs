@@ -1,6 +1,16 @@
 # Webpack
 
+Start by installing the webpack plugin as a dev dependency:
 
+```
+npm i -D purgecss-webpack-plugin
+```
+
+You will need `extract-text-webpack-plugin` as well.
+
+```
+npm i -D extract-text-webpack-plugin
+```
 
 ```js
 const path = require('path')

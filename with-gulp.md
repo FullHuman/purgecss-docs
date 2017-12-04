@@ -1,5 +1,11 @@
 # Gulp
 
+Start by installing the gulp plugin as a dev dependency.
+
+```
+npm i -D gulp-purgecss
+```
+
 ```js
 const gulp = require('gulp')
 const purgecss = require('gulp-purgecss')

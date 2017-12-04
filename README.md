@@ -80,11 +80,17 @@ var purgecssResult = purgecss.purge()
 
 ## Webpack
 
+Start by installing the plugin as a dev dependency:
+
+```
+npm i -D purgecss-webpack-plugin
+```
+
 ```js
 const path = require('path')
 const glob = require('glob')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const PurgecssPlugin = require('../../')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const PATHS = {
   src: path.join(__dirname, 'src')
@@ -119,6 +125,12 @@ module.exports = {
 
 ## Gulp
 
+Start by installing the gulp plugin as a dev dependency:
+
+```
+npm i -D gulp-purgecss
+```
+
 ```js
 const gulp = require('gulp')
 const purgecss = require('gulp-purgecss')
@@ -136,6 +148,12 @@ gulp.task('purgecss', () => {
 ```
 
 ## Rollup
+
+Start by installing the rollup plugin as a dev dependency:
+
+```
+npm i -D rollup-plugin-purgecss
+```
 
 ```js
 import { rollup } from 'rollup'
