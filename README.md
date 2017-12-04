@@ -8,11 +8,11 @@ Purgecss is a tool to remove unused css. It can be used as part of your developm
 
 Here are a couple of ways to use Purgecss:
 
-* CLI
-* Javascript API
-* Webpack
-* Gulp
-* Rollup
+* [CLI](#cli)
+* [Javascript API](#javascript-api)
+* [Webpack](#webpack)
+* [Gulp](#gulp)
+* [Rollup](#rollup)
 
 ## CLI
 
