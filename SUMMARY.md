@@ -8,6 +8,4 @@
 * [With Gulp](with-gulp.md)
 * [With Rollup](with-rollup.md)
 * [Whitelisting](whitelisting.md)
-* [Extractors](extractors.md)
-* [Configuration](configuration.md)
 
