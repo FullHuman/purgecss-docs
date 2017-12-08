@@ -28,7 +28,7 @@ module.exports = {
 
 * #### content
 
-You can specified the content with an array of filename or glob \(see link\) that should be analyized by purgecss. The files can be html, pug, blade, ... files.
+You can specified the content with an array of filename or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer) that should be analyized by purgecss. The files can be html, pug, blade, ... files.
 
 ```js
 new Purgecss({
@@ -71,10 +71,4 @@ new Purgecss({
 ```
 
 More information about extractors [here](/extractors.md).
-
-
-
-
-
-
 

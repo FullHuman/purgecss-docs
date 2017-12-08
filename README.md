@@ -1,6 +1,6 @@
 # Purgecss
 
-![](https://travis-ci.org/FullHuman/purgecss.svg?branch=master)![](https://circleci.com/gh/FullHuman/purgecss/tree/master.svg?style=shield)![](https://david-dm.org/fullhuman/purgecss/status.svg)![](https://david-dm.org/fullhuman/purgecss/dev-status.svg)![](https://api.codacy.com/project/badge/Grade/2f2f3fb0a5c541beab2018483e62a828)![](https://api.codacy.com/project/badge/Coverage/2f2f3fb0a5c541beab2018483e62a828)![](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)![](https://img.shields.io/github/license/fullhuman/purgecss.svg)
+![](https://travis-ci.org/FullHuman/purgecss.svg?branch=master) ![](https://circleci.com/gh/FullHuman/purgecss/tree/master.svg?style=shield) ![](https://david-dm.org/fullhuman/purgecss/status.svg) ![](https://david-dm.org/fullhuman/purgecss/dev-status.svg) ![](https://api.codacy.com/project/badge/Grade/2f2f3fb0a5c541beab2018483e62a828) ![](https://api.codacy.com/project/badge/Coverage/2f2f3fb0a5c541beab2018483e62a828) ![](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg) ![](https://img.shields.io/github/license/fullhuman/purgecss.svg) 
 
 ---
 
