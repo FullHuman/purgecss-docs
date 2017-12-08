@@ -42,8 +42,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('[name].css?[hash]'),
     new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/*`),
-      styleExtensions: ['.css']
+      paths: glob.sync(`${PATHS.src}/*`)
     })
   ]
 }
