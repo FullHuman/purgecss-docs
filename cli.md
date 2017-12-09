@@ -43,7 +43,7 @@ purgecss --css css/app.css --content src/index.html src/**/*.js
 
 ### --config
 
-You can use the CLI with a configuration file. Use the `--config` or `-c` with the path to the config file.
+You can use the CLI with a [configuration file](/configuration.md). Use the `--config` or `-c` with the path to the config file.
 
 ```
 purgecss --config ./purgecss.config.js
