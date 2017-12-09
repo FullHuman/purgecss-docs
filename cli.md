@@ -43,9 +43,27 @@ purgecss --css css/app.css --content src/index.html src/**/*.js
 
 ### --config
 
+You can use the CLI with a configuration file. Use the `--config` or `-c` with the path to the config file.
+
+```
+purgecss --config ./purgecss.config.js
+```
+
 ### --out
 
+By default, the CLI output the result in the console. If you wish to return the css as files, you need to specify the filepath directory to write the purified css files to.
+
+```
+purgecss --css css/app.css --content src/index.html src/**/*.js --out build/css/
+```
+
 ### --whitelist
+
+If you wish to include a css selector that purgecss removes, you can whitelist it. It will tell purgecss not to remove it.
+
+```
+purgecss --css css/app.css --content src/index.html --whitelist classnameToWhitelist
+```
 
 ## Example
 
