@@ -39,7 +39,7 @@ The format of purgecssResult is
 ## ES5 with require
 
 ```js
-var Purgecss = require('purgecss')
+var Purgecss = require('purgecss').default
 var purgecss = new Purgecss({
   content: ['**/*.html'],
   css: ['**/*.css']
