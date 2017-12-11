@@ -4,7 +4,7 @@ You can whitelist selectors to avoid purgecss to remove them from your css files
 
 ## Specific selector
 
-You can whitelist selectors based on a regular expression with `whitelist`.
+You can whitelist selectors with `whitelist`.
 
 ```js
 const purgecss = new Purgecss({

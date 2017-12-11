@@ -13,6 +13,14 @@ module.exports = {
 }
 ```
 
+You can then use purgecss with the file:
+
+```js
+const purgecss = new Purgecss()
+// or use the path to the file as the only parameter
+const purgecss = new Purgecss('./purgecss.config.js')
+```
+
 ## Options
 
 ```
@@ -71,4 +79,45 @@ new Purgecss({
 ```
 
 More information about extractors [here](/extractors.md).
+
+* #### whitelist
+
+You can whitelist selectors to avoid purgecss to remove them from your css files. You can do it with the purgecss options `whitelist` and `whitelistPatterns`.
+
+```js
+const purgecss = new Purgecss({
+    content: [], // content
+    css: [], // css
+    whitelist: ['random', 'yep', 'button']
+})
+```
+
+In the example, the selectors`.random`, `#yep`, `button` will be left in the final css.
+
+* #### whitelistPatterns
+
+You can whitelist selectors based on a regular expression with `whitelistPatterns`.
+
+```js
+const purgecss = new Purgecss({
+    content: [], // content
+    css: [], // css
+    whitelistPatterns: [/red$/]
+})
+```
+
+In the example, selectors ending with `red` such as `.bg-red` will be left in the final css.
+
+* #### stdin
+
+stdin allows you to set the css code itself in the css options directly.
+
+```js
+const purgecss = new Purgecss({
+    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
+    css: ['html, body { width: 100%; height: 100%} fieldset { border: none; }']
+})
+```
+
+
 
