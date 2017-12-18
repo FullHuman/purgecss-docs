@@ -48,5 +48,21 @@ module.exports = {
 }
 ```
 
+## Options
+
+The options available in the [Configuration](/configuration.md) are also avaiable in the webpack plugin with the exception of `css` and `content`.
+
+* only
+
+You can specify entrypoints to the purgecss-webpack-plugin with the option `only`: 
+
+```js
+new PurgecssPlugin({
+  paths: glob.sync(`${PATHS.src}/*`),
+  styleExtensions: ['.css'],
+  only: ['bundle', 'vendor']
+})
+```
+
 
 
