@@ -119,5 +119,17 @@ const purgecss = new Purgecss({
 })
 ```
 
+* #### keyframes \(default: false\)
+
+If you are using  an animation css library such as animate.css, you can remove unused keyframes by setting the `keyframes` option to `true`.
+
+```js
+new Purgecss({
+    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
+    css: [`css/app.css`],
+    keyframes: true
+}
+```
+
 
 
