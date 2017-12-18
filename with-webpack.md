@@ -54,12 +54,11 @@ The options available in the [Configuration](/configuration.md) are also avaiabl
 
 * only
 
-You can specify entrypoints to the purgecss-webpack-plugin with the option `only`: 
+You can specify entrypoints to the purgecss-webpack-plugin with the option `only`:
 
 ```js
 new PurgecssPlugin({
   paths: glob.sync(`${PATHS.src}/*`),
-  styleExtensions: ['.css'],
   only: ['bundle', 'vendor']
 })
 ```
