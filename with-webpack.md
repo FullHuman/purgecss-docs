@@ -50,7 +50,7 @@ module.exports = {
 
 ## Options
 
-The options available in the [Configuration](/configuration.md) are also avaiable in the webpack plugin with the exception of `css` and `content`.
+The options available in purgecss [Configuration](/configuration.md) are also avaiable in the webpack plugin with the exception of `css` and `content`.
 
 * only
 
