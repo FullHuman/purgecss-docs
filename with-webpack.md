@@ -54,7 +54,7 @@ The options available in purgecss [Configuration](/configuration.md) are also av
 
 * paths
 
-With the webpack plugin, you can specified the content with an array of filename that should be analyized by purgecss. The files can be html, pug, blade, ... files. You can use a module like `glob`  or `glob-all` to easily list the files.
+With the webpack plugin, you can specified the content that should be analyized by purgecss with an array of filename. It can be html, pug, blade, ... files. You can use a module like `glob`  or `glob-all` to easily get a list of files.
 
 ```js
 const PurgecssPlugin = require('purgecss-webpack-plugin')
