@@ -4,7 +4,7 @@
 
 ---
 
-Purgecss is a tool to remove unused css. It can be used as part of your development workflow. Purgecss comes with a Javascript API, a CLI and plugins for popular build tools.
+[Purgecss](https://github.com/FullHuman/purgecss) is a tool to remove unused css. It can be used as part of your development workflow. Purgecss comes with a Javascript API, a CLI and plugins for popular build tools.
 
 Here are a couple of ways to use Purgecss:
 

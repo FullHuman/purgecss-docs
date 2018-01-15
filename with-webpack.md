@@ -48,13 +48,13 @@ module.exports = {
 }
 ```
 
-## Options
+### Options
 
-The options available in purgecss [Configuration](/configuration.md) are also avaiable in the webpack plugin with the exception of `css` and `content`.
+The options available in purgecss [Configuration](https://www.purgecss.com/configuration.html) are also avaiable in the webpack plugin with the exception of css and content.
 
 * paths
 
-With the webpack plugin, you can specified the content that should be analyized by purgecss with an array of filename. It can be html, pug, blade, ... files. You can use a module like `glob`  or `glob-all` to easily get a list of files.
+With the webpack plugin, you can specified the content that should be analyized by purgecss with an array of filename. It can be html, pug, blade, ... files. You can use a module like `glob` or `glob-all` to easily get a list of files.
 
 ```js
 const PurgecssPlugin = require('purgecss-webpack-plugin')
@@ -65,18 +65,46 @@ const PATHS = {
 
 // In the webpack configuration
 new PurgecssPlugin({
-    paths: glob.sync(`${PATHS.src}/*`)
+  paths: glob.sync(`${PATHS.src}/*`)
+})
+```
+
+If you want to regenerate the paths list on every compilation (e.g. with `--watch`), then you can also pass a function:
+```js
+new PurgecssPlugin({
+  paths: () => glob.sync(`${PATHS.src}/*`)
 })
 ```
 
 * only
 
-You can specify entrypoints to the purgecss-webpack-plugin with the option `only`:
+You can specify entrypoints to the purgecss-webpack-plugin with the option only:
 
 ```js
 new PurgecssPlugin({
   paths: glob.sync(`${PATHS.src}/*`),
   only: ['bundle', 'vendor']
+})
+```
+
+* #### whitelist and whitelistPatterns
+
+Similar as for the `paths` option, you also can define functions for the these options:
+
+```js
+function collectWhitelist() {
+    // do something to collect the whitelist
+    return ['whitelisted'];
+}
+function collectWhitelistPatterns() {
+    // do something to collect the whitelist
+    return [/^whitelisted-/];
+}
+
+// In the webpack configuration
+new PurgecssPlugin({
+  whitelist: collectWhitelist,
+  whitelistPatterns: collectWhitelistPatterns
 })
 ```
 
