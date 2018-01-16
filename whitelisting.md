@@ -1,8 +1,8 @@
 # Whitelisting
 
-You can whitelist selectors to avoid purgecss to remove them from your css files. You can do it with the purgecss options `whitelist` and `whitelistPatterns` or directly in the css file with a special comment.
+You can whitelist selectors to stop purgecss from removing them from your CSS. This can be accomplished with the purgecss options `whitelist` and `whitelistPatterns`, or directly in your CSS with a special comment.
 
-## Specific selector
+## Specific selectors
 
 You can whitelist selectors with `whitelist`.
 
@@ -14,7 +14,7 @@ const purgecss = new Purgecss({
 })
 ```
 
-In the example, the selectors`.random`, `#yep`, `button` will be left in the final css.
+In the example, the selectors `.random`, `#yep`, `button` will be left in the final CSS.
 
 ## Patterns
 
@@ -28,13 +28,13 @@ const purgecss = new Purgecss({
 })
 ```
 
-In the example, selectors ending with `red` such as `.bg-red` will be left in the final css.
+In the example, selectors ending with `red` such as `.bg-red` will be left in the final CSS.
 
-Patterns are regular expressions, you can use [regexr](https://regexr.com) to verify the regular expressions correspond to what you are looking for.
+Patterns are regular expressions. You can use [regexr](https://regexr.com) to verify the regular expressions correspond to what you are looking for.
 
-## In the css file
+## In the CSS directly
 
-You can whitelist directly in your css files with a special comment.
+You can whitelist directly in your CSS with a special comment.
 
 ```css
 /* purgecss ignore */

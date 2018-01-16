@@ -1,14 +1,14 @@
-# Javascript API
+# JavaScript API
 
-Start by installing Purgecss as a development dependency.
+Start by installing Purgecss as a dev dependency.
 
 ```
 npm i -D purgecss
 ```
 
-You can then use purgecss inside a javascript file.
+You can now use Purgecss inside a JavaScript file.
 
-In the following examples, the options passed to Purgecss are the same as the ones [here](/configuration.md). The result `purgecssResult` is an array of an object containing the name of the files with the purged css.
+In the following examples, the options passed to Purgecss are the same as the ones [here](/configuration.md). The result `purgecssResult` is an array of an object containing the name of the files with the purged CSS.
 
 ## ES6 with import
 

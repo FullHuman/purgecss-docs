@@ -35,7 +35,7 @@ purgecss --css css/app.css css/palette.css --content src/index.html
 
 ### --content
 
-You can specified the content with an array of filename or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer) that should be analyized by purgecss. The files can be html, pug, blade, ... files.
+You can specify content that should be analyzed by Purgecss with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). These files can be HTML, Pug, Blade, etc.
 
 ```
 purgecss --css css/app.css --content src/index.html src/**/*.js
@@ -43,7 +43,7 @@ purgecss --css css/app.css --content src/index.html src/**/*.js
 
 ### --config
 
-You can use the CLI with a [configuration file](/configuration.md). Use the `--config` or `-c` with the path to the config file.
+You can use the CLI with a [configuration file](/configuration.md). Use `--config` or `-c` with the path to the config file.
 
 ```
 purgecss --config ./purgecss.config.js
@@ -51,7 +51,7 @@ purgecss --config ./purgecss.config.js
 
 ### --out
 
-By default, the CLI output the result in the console. If you wish to return the css as files, you need to specify the filepath directory to write the purified css files to.
+By default, the CLI outputs the result in the console. If you wish to return the CSS as files, specify the directory to write the purified CSS files to.
 
 ```
 purgecss --css css/app.css --content src/index.html src/**/*.js --out build/css/
@@ -59,7 +59,7 @@ purgecss --css css/app.css --content src/index.html src/**/*.js --out build/css/
 
 ### --whitelist
 
-If you wish to include a css selector that purgecss removes, you can whitelist it. It will tell purgecss not to remove it.
+If you wish to prevent Purgecss from removing a specific CSS selector, you can whitelist it.
 
 ```
 purgecss --css css/app.css --content src/index.html --whitelist classnameToWhitelist
@@ -67,5 +67,5 @@ purgecss --css css/app.css --content src/index.html --whitelist classnameToWhite
 
 ## Example
 
-You can see an example in the examples folder of the purgecss repository [here](https://github.com/FullHuman/purgecss/tree/master/examples/cli/config-file).
+You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/examples/cli/config-file).
 
