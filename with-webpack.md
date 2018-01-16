@@ -78,7 +78,7 @@ new PurgecssPlugin({
 
 * only
 
-You can specify entrypoints to the purgecss-webpack-plugin with the `option` only:
+You can specify entrypoints to the purgecss-webpack-plugin with the option `only`:
 
 ```js
 new PurgecssPlugin({
