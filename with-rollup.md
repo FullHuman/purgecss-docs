@@ -1,6 +1,6 @@
 # Rollup
 
-Start by installing the rollup plugin as a dev dependency.
+Start by installing the Rollup plugin as a dev dependency.
 
 ```
 npm i -D rollup-plugin-purgecss
