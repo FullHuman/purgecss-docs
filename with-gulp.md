@@ -1,6 +1,6 @@
 # Gulp
 
-Start by installing the gulp plugin as a dev dependency.
+Start by installing the Gulp plugin as a dev dependency.
 
 ```
 npm i -D gulp-purgecss

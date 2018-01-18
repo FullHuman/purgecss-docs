@@ -1,10 +1,10 @@
 # Configuration
 
-Purgecss has  a list of options that allow you to customize its behavior. Customization can improve the performance or efficiency of Purgecss. You can create a configuration file with the options and use it with Purgecss.
+Purgecss has  a list of options that allow you to customize its behavior. Customization can improve the performance and efficiency of Purgecss. You can create a configuration file with the following options.
 
 ## Configuration file
 
-The configuration file is a simple js file. By default, the javascript api will look for `purgecss.config.js`.
+The configuration file is a simple JavaScript file. By default, the JavaScript API will look for `purgecss.config.js`.
 
 ```js
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
 }
 ```
 
-You can then use purgecss with the file:
+You can then use Purgecss with the file:
 
 ```js
 const purgecss = new Purgecss()
@@ -36,7 +36,7 @@ const purgecss = new Purgecss('./purgecss.config.js')
 
 * #### content
 
-You can specified the content with an array of filename or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer) that should be analyized by purgecss. The files can be html, pug, blade, ... files.
+You can specify content that should be analyzed by Purgecss with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). The files can be HTML, Pug, Blade, etc.
 
 ```js
 new Purgecss({
@@ -45,7 +45,7 @@ new Purgecss({
 }
 ```
 
-Purgecss works also with raw content, you need to pass an object with the `raw`and `extension` properties instead of the filename.
+Purgecss also works with raw content. To do this, you need to pass an object with the `raw` and `extension` properties instead of a filename.
 
 ```js
 new Purgecss({
@@ -61,7 +61,7 @@ new Purgecss({
 
 * #### extractors
 
-Purgecss can be adapted to suit your need. If you notice a lot of unused css is not being removed, you might want to use a specific extractor.
+Purgecss can be adapted to suit your needs. If you notice a lot of unused CSS is not being removed, you might want to use a custom extractor.
 
 ```js
 new Purgecss({
@@ -82,7 +82,7 @@ More information about extractors [here](/extractors.md).
 
 * #### whitelist
 
-You can whitelist selectors to avoid purgecss to remove them from your css files. You can do it with the purgecss options `whitelist` and `whitelistPatterns`.
+You can whitelist selectors to stop Purgecss from removing them from your CSS. This can be accomplished with the options `whitelist` and `whitelistPatterns`.
 
 ```js
 const purgecss = new Purgecss({
@@ -92,7 +92,7 @@ const purgecss = new Purgecss({
 })
 ```
 
-In the example, the selectors`.random`, `#yep`, `button` will be left in the final css.
+In the example, the selectors `.random`, `#yep`, `button` will be left in the final CSS.
 
 * #### whitelistPatterns
 
@@ -106,11 +106,11 @@ const purgecss = new Purgecss({
 })
 ```
 
-In the example, selectors ending with `red` such as `.bg-red` will be left in the final css.
+In the example, selectors ending with `red` such as `.bg-red` will be left in the final CSS.
 
 * #### stdin
 
-stdin allows you to set the css code itself in the css options directly.
+stdin allows you to set the CSS code itself in the CSS options directly.
 
 ```js
 const purgecss = new Purgecss({
@@ -121,7 +121,7 @@ const purgecss = new Purgecss({
 
 * #### keyframes \(default: false\)
 
-If you are using  an animation css library such as animate.css, you can remove unused keyframes by setting the `keyframes` option to `true`.
+If you are using a CSS animation library such as animate.css, you can remove unused keyframes by setting the `keyframes` option to `true`.
 
 ```js
 new Purgecss({

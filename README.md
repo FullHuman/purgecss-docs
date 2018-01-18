@@ -4,19 +4,19 @@
 
 ---
 
-[Purgecss](https://github.com/FullHuman/purgecss) is a tool to remove unused css. It can be used as part of your development workflow. Purgecss comes with a Javascript API, a CLI and plugins for popular build tools.
+[Purgecss](https://github.com/FullHuman/purgecss) is a tool to remove unused CSS. It can be used as part of your development workflow. Purgecss comes with a JavaScript API, a CLI, and plugins for popular build tools.
 
 Here are a couple of ways to use Purgecss:
 
 * [CLI](#cli)
-* [Javascript API](#javascript-api)
+* [JavaScript API](#javascript-api)
 * [Webpack](#webpack)
 * [Gulp](#gulp)
 * [Rollup](#rollup)
 
 ## CLI
 
-You can install the CLI in two ways. By installing purgecss globaly or using npx.
+You can install the CLI in two ways. By installing Purgecss globally or using npx.
 
 ### Install globally
 
@@ -32,9 +32,9 @@ purgecss --css <css> --content <content> [option]
 
 ### Using npx
 
-[npx](https://www.npmjs.com/package/npx)[^1] allows you to run cli locally without installing the package globally.
+[npx](https://www.npmjs.com/package/npx)[^1] allows you to run the CLI locally without installing the package globally.
 
-You can install purgecss as a dev dependency
+You can install Purgecss as a dev dependency
 
 ```
 npm i -D purgecss
@@ -46,15 +46,15 @@ You can then use it with
 npx purgecss --css <css> --content <content> [option]
 ```
 
-## Javascript API
+## JavaScript API
 
-Start by installing Purgecss as a development dependency.
+Start by installing Purgecss as a dev dependency.
 
 ```
 npm i -D purgecss
 ```
 
-You can then use purgecss inside a javascript file.
+You can then use Purgecss inside a JavaScript file.
 
 ### ES6 with import
 
@@ -124,7 +124,7 @@ module.exports = {
 
 ## Gulp
 
-Start by installing the gulp plugin as a dev dependency:
+Start by installing the Gulp plugin as a dev dependency:
 
 ```
 npm i -D gulp-purgecss
@@ -148,7 +148,7 @@ gulp.task('purgecss', () => {
 
 ## Rollup
 
-Start by installing the rollup plugin as a dev dependency:
+Start by installing the Rollup plugin as a dev dependency:
 
 ```
 npm i -D rollup-plugin-purgecss
