@@ -70,7 +70,7 @@ const purgecssResult = purgecss.purge()
 ### ES5 with require
 
 ```js
-var Purgecss = require('purgecss').default
+var Purgecss = require('purgecss')
 var purgecss = new Purgecss({
   content: ['**/*.html'],
   css: ['**/*.css']
