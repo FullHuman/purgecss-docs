@@ -6,7 +6,7 @@ You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/
 
 ## Created with vue-cli
 
-This example shows how to set up Purgecss with vue-webpack template.\
+This example shows how to set up Purgecss with vue-webpack template.  
 Once you initialized your project with `vue init webpack`, install the webpack plugin
 for purgecss:
 
@@ -40,6 +40,6 @@ line 58
 
 ## Results
 
-This example is importing the bootstrap css framework.\
-Without purgecss, the css file size is **117 kB**.\
+This example is importing the bootstrap css framework.  
+Without purgecss, the css file size is **117 kB**.  
 Using purgecss, the css file size is **2.98 kB**
