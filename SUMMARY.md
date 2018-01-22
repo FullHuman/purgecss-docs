@@ -10,4 +10,9 @@
 * [Whitelisting](whitelisting.md)
 * [Extractors](extractors.md)
 * [Comparison](comparison.md)
+* Guides
+  * [React](React.md)
+  * [Vue](Vue.md)
+
+
 
