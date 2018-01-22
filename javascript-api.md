@@ -46,8 +46,3 @@ var purgecss = new Purgecss({
 })
 var purgecssResult = purgecss.purge()
 ```
-
-## 
-
-
-
