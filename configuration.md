@@ -45,7 +45,8 @@ new Purgecss({
 }
 ```
 
-Purgecss also works with raw content. To do this, you need to pass an object with the `raw` and `extension` properties instead of a filename.
+Purgecss also works with raw content. To do this, you need to pass an object with the `raw` property instead of a filename. To work properly with custom extractors you need to pass the `extension` property along with the raw content.
+
 
 ```js
 new Purgecss({
@@ -55,7 +56,10 @@ new Purgecss({
             extension: 'html'
         },
         `**/*.js`, '**/*.html', '**/*.vue'],
-    css: [`css/app.css`]
+    css: [{
+            raw: 'body { margin: 0 }'
+        },
+        `css/app.css`]
 }
 ```
 
@@ -131,5 +135,16 @@ new Purgecss({
 }
 ```
 
+* #### fontFace \(default: false\)
+
+If there are any unused @font-face rules in your css, you can remove them by setting the `fontFace` option to `true`
+
+```js
+new Purgecss({
+    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
+    css: [`css/app.css`],
+    fontFace: true
+}
+```
 
 
