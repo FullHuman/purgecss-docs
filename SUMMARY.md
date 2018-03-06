@@ -13,6 +13,7 @@
 * Guides
   * [React](React.md)
   * [Vue](Vue.md)
+  * [Nuxt](Nuxt.md)
   * [Wordpress](Wordpress.md)
 
 
