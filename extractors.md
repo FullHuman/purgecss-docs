@@ -43,7 +43,7 @@ export default options
 
 ## Creating an extractor
 
-An extractor is a simple class with one static method. The method \`extract\` takes the content of a file as a string and return an array of selectors[^1]. By convention, the name of the npm package is \`purge-from-\[typefile\]\` \(e.g. purge-from-pug\). Using this convention will allow users to look at the list of extractor on npm by searching \`purge-from\`
+An extractor is a simple class with one static method. The method `extract` takes the content of a file as a string and return an array of selectors[^1]. By convention, the name of the npm package is `purge-from-[typefile]` \(e.g. purge-from-pug\). Using this convention will allow users to look at the list of extractor on npm by searching `purge-from`
 
 ```js
 class PurgeFromJs {
@@ -52,8 +52,6 @@ class PurgeFromJs {
   }
 }
 ```
-
-.
 
 
 
