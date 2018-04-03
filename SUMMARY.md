@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 * [Configuration](configuration.md)
@@ -11,10 +11,8 @@
 * [Extractors](extractors.md)
 * [Comparison](comparison.md)
 * Guides
-  * [React](React.md)
-  * [Vue](Vue.md)
-  * [Nuxt](Nuxt.md)
-  * [Wordpress](Wordpress.md)
-
-
+  * [React](guides/react.md)
+  * [Vue](guides/vue.md)
+  * [Nuxt](guides/nuxt.md)
+  * [Wordpress](guides/wordpress.md)
 

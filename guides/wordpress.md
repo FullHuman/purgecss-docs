@@ -1,24 +1,22 @@
-# Purgecss with Wordpress
+# Wordpress
 
-
-Based on the [gist](https://gist.github.com/frnwtr/5647673bb15ca8893642469d3b400cba) made by @frnwtr, `purgecss-with-wordpress` is a set of templates for
-Wordpress CMS.
+Based on the [gist](https://gist.github.com/frnwtr/5647673bb15ca8893642469d3b400cba) made by @frnwtr, `purgecss-with-wordpress` is a set of templates for Wordpress CMS.
 
 ## Getting Started
 
-#### Installation
+### Installation
 
 You need to install [purgecss](https://github.com/FullHuman/purgecss) first.
 
 Install `purgecss-with-wordpress`:
-```sh
+
+```bash
 npm i --save-dev purgecss-with-wordpress
 ```
 
 ## Usage
 
-```js
-
+```javascript
 import Purgecss from 'purgecss'
 import purgecssWordpress from 'purgecss-with-worpress'
 
@@ -30,3 +28,4 @@ const purgeCss = new Purgecss({
 })
 const result = purgecss.purge()
 ```
+

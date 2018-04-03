@@ -1,18 +1,14 @@
-# Purgecss
-
-![](https://travis-ci.org/FullHuman/purgecss.svg?branch=master) ![](https://circleci.com/gh/FullHuman/purgecss/tree/master.svg?style=shield) ![](https://david-dm.org/fullhuman/purgecss/status.svg) ![](https://david-dm.org/fullhuman/purgecss/dev-status.svg) ![](https://api.codacy.com/project/badge/Grade/2f2f3fb0a5c541beab2018483e62a828) ![](https://api.codacy.com/project/badge/Coverage/2f2f3fb0a5c541beab2018483e62a828) ![](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg) ![](https://img.shields.io/github/license/fullhuman/purgecss.svg)
-
----
+# Introduction
 
 [Purgecss](https://github.com/FullHuman/purgecss) is a tool to remove unused CSS. It can be used as part of your development workflow. Purgecss comes with a JavaScript API, a CLI, and plugins for popular build tools.
 
 Here are a couple of ways to use Purgecss:
 
-* [CLI](#cli)
-* [JavaScript API](#javascript-api)
-* [Webpack](#webpack)
-* [Gulp](#gulp)
-* [Rollup](#rollup)
+* [CLI](./#cli)
+* [JavaScript API](./#javascript-api)
+* [Webpack](./#webpack)
+* [Gulp](./#gulp)
+* [Rollup](./#rollup)
 
 ## CLI
 
@@ -20,29 +16,29 @@ You can install the CLI in two ways. By installing Purgecss globally or using np
 
 ### Install globally
 
-```
+```text
 npm i -g purgecss
 ```
 
 You can then use it with
 
-```
+```text
 purgecss --css <css> --content <content> [option]
 ```
 
 ### Using npx
 
-[npx](https://www.npmjs.com/package/npx)[^1] allows you to run the CLI locally without installing the package globally.
+[npx](https://www.npmjs.com/package/npx) allows you to run the CLI locally without installing the package globally.
 
 You can install Purgecss as a dev dependency
 
-```
+```text
 npm i -D purgecss
 ```
 
 You can then use it with
 
-```
+```text
 npx purgecss --css <css> --content <content> [option]
 ```
 
@@ -50,7 +46,7 @@ npx purgecss --css <css> --content <content> [option]
 
 Start by installing Purgecss as a dev dependency.
 
-```
+```text
 npm i -D purgecss
 ```
 
@@ -58,7 +54,7 @@ You can then use Purgecss inside a JavaScript file.
 
 ### ES6 with import
 
-```js
+```javascript
 import Purgecss from 'purgecss'
 const purgeCss = new Purgecss({
   content: ['**/*.html'],
@@ -69,7 +65,7 @@ const purgecssResult = purgecss.purge()
 
 ### ES5 with require
 
-```js
+```javascript
 var Purgecss = require('purgecss')
 var purgecss = new Purgecss({
   content: ['**/*.html'],
@@ -82,11 +78,11 @@ var purgecssResult = purgecss.purge()
 
 Start by installing the plugin as a dev dependency:
 
-```
+```text
 npm i -D purgecss-webpack-plugin
 ```
 
-```js
+```javascript
 const path = require('path')
 const glob = require('glob')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -126,11 +122,11 @@ module.exports = {
 
 Start by installing the Gulp plugin as a dev dependency:
 
-```
+```text
 npm i -D gulp-purgecss
 ```
 
-```js
+```javascript
 const gulp = require('gulp')
 const purgecss = require('gulp-purgecss')
 
@@ -150,11 +146,11 @@ gulp.task('purgecss', () => {
 
 Start by installing the Rollup plugin as a dev dependency:
 
-```
+```text
 npm i -D rollup-plugin-purgecss
 ```
 
-```js
+```javascript
 import { rollup } from 'rollup'
 import purgecss from 'rollup-plugin-purgecss'
 
@@ -167,6 +163,4 @@ rollup({
   ]
 })
 ```
-
-[^1]: If you want to use npx, npm 5.2.0+ must be installed.
 

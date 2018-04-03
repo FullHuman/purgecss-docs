@@ -1,4 +1,4 @@
-# Comparison with other tools
+# Comparison
 
 Purgecss is not the only tool to remove unused CSS. Below you will find a list of some of the tools available as well as a comparison with Purgecss.
 
@@ -8,7 +8,7 @@ The biggest flaw with PurifyCSS is its lack of modularity. However, this is also
 
 Purgecss fixes this problem by providing the possibility to create an _extractor_. An extractor is a function that takes the content of a file and extracts the list of CSS selectors used in it. It allows a perfect removal of unused CSS.
 
-The extractor can be used as a parser that returns an AST (abstract syntax tree) and looks through it to find any CSS selectors. This is the way `purge-from-html` works. You can specify which selectors you want to use for each file type, allowing you to get the most accurate results. Additionally, you can use the default or legacy extractor, which will mimic PurifyCSS's behavior.
+The extractor can be used as a parser that returns an AST \(abstract syntax tree\) and looks through it to find any CSS selectors. This is the way `purge-from-html` works. You can specify which selectors you want to use for each file type, allowing you to get the most accurate results. Additionally, you can use the default or legacy extractor, which will mimic PurifyCSS's behavior.
 
 ## UnCSS
 
@@ -26,5 +26,4 @@ To remove unused CSS from Pug template files, for example, you would need to con
 At the moment, UnCSS is probably the most accurate tool to remove unused CSS if you do not use server-side rendering.
 
 Purgecss does not have an extractor right now for JavaScript files. But because of its modularity, developers can create an extractor for specific frameworks \(Vue, React, Aurelia\) and file types \(pug, ejs\). This way, you can get the most accurate results without the need of emulation.
-
 

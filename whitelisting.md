@@ -6,7 +6,7 @@ You can whitelist selectors to stop purgecss from removing them from your CSS. T
 
 You can whitelist selectors with `whitelist`.
 
-```js
+```javascript
 const purgecss = new Purgecss({
     content: [], // content
     css: [], // css
@@ -20,7 +20,7 @@ In the example, the selectors `.random`, `#yep`, `button` will be left in the fi
 
 You can whitelist selectors based on a regular expression with `whitelistPatterns`.
 
-```js
+```javascript
 const purgecss = new Purgecss({
     content: [], // content
     css: [], // css
@@ -42,6 +42,4 @@ h1 {
     color: blue;
 }
 ```
-
-
 

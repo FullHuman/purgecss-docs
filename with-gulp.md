@@ -1,12 +1,12 @@
-# Gulp
+# With Gulp
 
 Start by installing the Gulp plugin as a dev dependency.
 
-```
+```text
 npm i -D gulp-purgecss
 ```
 
-```js
+```javascript
 const gulp = require('gulp')
 const purgecss = require('gulp-purgecss')
 
@@ -21,6 +21,4 @@ gulp.task('purgecss', () => {
     .pipe(gulp.dest('build/'))
 })
 ```
-
-
 
