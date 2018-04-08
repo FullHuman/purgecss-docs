@@ -2,17 +2,17 @@
 
 Start by installing Purgecss as a dev dependency.
 
-```
+```text
 npm i -D purgecss
 ```
 
 You can now use Purgecss inside a JavaScript file.
 
-In the following examples, the options passed to Purgecss are the same as the ones [here](/configuration.md). The result `purgecssResult` is an array of an object containing the name of the files with the purged CSS.
+In the following examples, the options passed to Purgecss are the same as the ones [here](configuration.md). The result `purgecssResult` is an array of an object containing the name of the files with the purged CSS.
 
 ## ES6 with import
 
-```js
+```javascript
 import Purgecss from 'purgecss'
 const purgeCss = new Purgecss({
   content: ['**/*.html'],
@@ -23,7 +23,7 @@ const purgecssResult = purgecss.purge()
 
 The format of purgecssResult is
 
-```js
+```javascript
 [
     {
         file: 'main.css',
@@ -38,7 +38,7 @@ The format of purgecssResult is
 
 ## ES5 with require
 
-```js
+```javascript
 var Purgecss = require('purgecss')
 var purgecss = new Purgecss({
   content: ['**/*.html'],
@@ -46,3 +46,4 @@ var purgecss = new Purgecss({
 })
 var purgecssResult = purgecss.purge()
 ```
+

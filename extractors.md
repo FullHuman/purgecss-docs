@@ -1,4 +1,4 @@
-# Extractor
+# Extractors
 
 Purgecss can be adapted to suit your need. If you notice a lot of unused css is not being removed, you might want to use a specific extractor.
 
@@ -20,7 +20,7 @@ Using an specific extractor for an extension should provide you with the best ac
 
 You can use an extractor by settings the extractors option in the purgecss config file.
 
-```js
+```javascript
 import purgeJs from 'purge-from-js'
 import purgeHtml from 'purge-from-html'
 
@@ -45,15 +45,14 @@ export default options
 
 An extractor is a simple class with one static method. The method `extract` takes the content of a file as a string and return an array of selectors[^1]. By convention, the name of the npm package is `purge-from-[typefile]` \(e.g. purge-from-pug\). Using this convention will allow users to look at the list of extractor on npm by searching `purge-from`
 
-```js
+
+```javascript
 class PurgeFromJs {
   static extract(content) {
     // return array of css selectors
   }
 }
 ```
-
-
 
 [^1]: Returning `null` from the extract method will throw an error, indicating that the extraction failed.
 

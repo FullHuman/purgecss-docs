@@ -4,7 +4,7 @@ Purgecss is available via a CLI. You can use the CLI by itself or with a configu
 
 ## Installation
 
-```
+```text
 npm i -g purgecss
 ```
 
@@ -12,7 +12,7 @@ npm i -g purgecss
 
 To see the available options for the CLI: `purgecss --help`
 
-```
+```text
 purgecss --css <css> --content <content> [option]
 
 Options:
@@ -29,7 +29,7 @@ The options available through the CLI are similar to the ones available with a c
 
 ### --css
 
-```
+```text
 purgecss --css css/app.css css/palette.css --content src/index.html
 ```
 
@@ -37,15 +37,15 @@ purgecss --css css/app.css css/palette.css --content src/index.html
 
 You can specify content that should be analyzed by Purgecss with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). These files can be HTML, Pug, Blade, etc.
 
-```
+```text
 purgecss --css css/app.css --content src/index.html src/**/*.js
 ```
 
 ### --config
 
-You can use the CLI with a [configuration file](/configuration.md). Use `--config` or `-c` with the path to the config file.
+You can use the CLI with a [configuration file](configuration.md). Use `--config` or `-c` with the path to the config file.
 
-```
+```text
 purgecss --config ./purgecss.config.js
 ```
 
@@ -53,7 +53,7 @@ purgecss --config ./purgecss.config.js
 
 By default, the CLI outputs the result in the console. If you wish to return the CSS as files, specify the directory to write the purified CSS files to.
 
-```
+```text
 purgecss --css css/app.css --content src/index.html src/**/*.js --out build/css/
 ```
 
@@ -61,7 +61,7 @@ purgecss --css css/app.css --content src/index.html src/**/*.js --out build/css/
 
 If you wish to prevent Purgecss from removing a specific CSS selector, you can whitelist it.
 
-```
+```text
 purgecss --css css/app.css --content src/index.html --whitelist classnameToWhitelist
 ```
 
