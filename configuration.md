@@ -40,8 +40,8 @@ You can specify content that should be analyzed by Purgecss with an array of fil
 
 ```javascript
 new Purgecss({
-    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
-    css: [`css/app.css`]
+    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+    css: ['css/app.css']
 }
 ```
 
@@ -54,11 +54,11 @@ new Purgecss({
             raw: '<html><body><div class="app"></div></body></html>',
             extension: 'html'
         },
-        `**/*.js`, '**/*.html', '**/*.vue'],
+        '**/*.js', '**/*.html', '**/*.vue'],
     css: [{
             raw: 'body { margin: 0 }'
         },
-        `css/app.css`]
+        'css/app.css']
 }
 ```
 
@@ -68,8 +68,8 @@ Purgecss can be adapted to suit your needs. If you notice a lot of unused CSS is
 
 ```javascript
 new Purgecss({
-    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
-    css: [`css/app.css`],
+    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+    css: ['css/app.css'],
     extractors: {
         extractor: class {
             static extract(content) {
@@ -117,7 +117,7 @@ stdin allows you to set the CSS code itself in the CSS options directly.
 
 ```javascript
 const purgecss = new Purgecss({
-    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
+    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
     css: ['html, body { width: 100%; height: 100%} fieldset { border: none; }']
 })
 ```
@@ -128,8 +128,8 @@ If you are using a CSS animation library such as animate.css, you can remove unu
 
 ```javascript
 new Purgecss({
-    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
-    css: [`css/app.css`],
+    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+    css: ['css/app.css'],
     keyframes: true
 }
 ```
@@ -140,8 +140,8 @@ If there are any unused @font-face rules in your css, you can remove them by set
 
 ```javascript
 new Purgecss({
-    content: ['index.html', `**/*.js`, '**/*.html', '**/*.vue'],
-    css: [`css/app.css`],
+    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+    css: ['css/app.css'],
     fontFace: true
 }
 ```
