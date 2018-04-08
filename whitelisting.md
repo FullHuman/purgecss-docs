@@ -18,7 +18,7 @@ In the example, the selectors `.random`, `#yep`, `button` will be left in the fi
 
 ## Patterns
 
-You can whitelist selectors based on a regular expression with `whitelistPatterns`.
+You can whitelist selectors based on a regular expression with `whitelistPatterns` and `whitelistPatternsChildren`.
 
 ```javascript
 const purgecss = new Purgecss({

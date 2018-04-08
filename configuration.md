@@ -26,11 +26,14 @@ const purgecss = new Purgecss('./purgecss.config.js')
 ```text
 {
   content: Array<string | RawContent>,
-  css: Array<string>,
+  css: Array<string | RawContent>,
   extractors?: Array<ExtractorsObj>,
   whitelist?: Array<string>,
   whitelistPatterns?: Array<RegExp>,
+  whitelistPatternsChildren?: Array<RegExp>,
   stdin?: boolean,
+  keyframes?: boolean,
+  fontFace?: boolean
 }
 ```
 
@@ -110,6 +113,20 @@ const purgecss = new Purgecss({
 ```
 
 In the example, selectors ending with `red` such as `.bg-red` will be left in the final CSS.
+
+* **whitelistPatternsChildren**
+
+You can whitelist selectors based on a regular expression with `whitelistPatternsChildren`. Contrary to `whitelistPatterns`, it will also whitelist children of the selectors.
+
+```javascript
+const purgecss = new Purgecss({
+    content: [], // content
+    css: [], // css
+    whitelistPatternsChildren: [/red$/]
+})
+```
+
+In the example, selectors such as `red p` or `.bg-red .child-of-bg` will be left in the final CSS.
 
 * **stdin**
 
