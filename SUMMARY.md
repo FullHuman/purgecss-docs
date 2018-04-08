@@ -6,6 +6,7 @@
 * [JavaScript API](javascript-api.md)
 * [With Webpack](with-webpack.md)
 * [With Gulp](with-gulp.md)
+* [With Grunt](with-grunt.md)
 * [With Rollup](with-rollup.md)
 * [Whitelisting](whitelisting.md)
 * [Extractors](extractors.md)

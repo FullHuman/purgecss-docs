@@ -142,6 +142,35 @@ gulp.task('purgecss', () => {
 })
 ```
 
+## Grunt
+
+Start by installing the Grunt plugin as a dev dependency:
+
+```text
+npm i -D grunt-purgecss
+```
+
+```javascript
+module.exports = grunt => {
+
+  grunt.initConfig({
+    purgecss: {
+      options: {
+        content: ['./src/**/*.html']
+      },
+      my_target: {
+        files: {
+          './dist/app.purged.css': './src/app.css'
+        }
+      }
+    }
+  })
+
+  grunt.loadNpmTasks('grunt-purgecss')
+  grunt.registerTask('default', ['purgecss'])
+}
+```
+
 ## Rollup
 
 Start by installing the Rollup plugin as a dev dependency:
