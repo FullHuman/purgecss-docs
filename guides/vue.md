@@ -13,7 +13,7 @@ Once you initialized your project with `vue init webpack`, install the webpack p
 npm i --save-dev glob-all purgecss-webpack-plugin
 ```
 
-You need to modify the file `webpack.prop.conf.js` by adding the following code:
+You need to modify the file `webpack.prod.conf.js` by adding the following code:
 
 line 13
 
