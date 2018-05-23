@@ -35,11 +35,41 @@ Patterns are regular expressions. You can use [regexr](https://regexr.com) to ve
 ## In the CSS directly
 
 You can whitelist directly in your CSS with a special comment.
+Use `/* purgecss ignore */` to whitelist the next rule.
 
 ```css
 /* purgecss ignore */
 h1 {
     color: blue;
 }
+```
+
+You can use `/* purgecss start ignore` and `/* purgecss end ignore */` to whitelist a range of rules.
+
+```css
+/* purgecss start ignore */
+h1 {
+  color: blue;
+}
+
+h3 {
+  color: green;
+}
+/* purgecss end ignore */
+
+h4 {
+  color: purple;
+}
+
+/* purgecss start ignore */
+h5 {
+  color: pink;
+}
+
+h6 {
+  color: lightcoral;
+}
+
+/* purgecss end ignore */
 ```
 

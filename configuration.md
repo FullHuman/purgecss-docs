@@ -31,9 +31,9 @@ const purgecss = new Purgecss('./purgecss.config.js')
   whitelist?: Array<string>,
   whitelistPatterns?: Array<RegExp>,
   whitelistPatternsChildren?: Array<RegExp>,
-  stdin?: boolean,
   keyframes?: boolean,
-  fontFace?: boolean
+  fontFace?: boolean,
+  rejected?: boolean
 }
 ```
 
@@ -128,17 +128,6 @@ const purgecss = new Purgecss({
 
 In the example, selectors such as `red p` or `.bg-red .child-of-bg` will be left in the final CSS.
 
-* **stdin**
-
-stdin allows you to set the CSS code itself in the CSS options directly.
-
-```javascript
-const purgecss = new Purgecss({
-    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
-    css: ['html, body { width: 100%; height: 100%} fieldset { border: none; }']
-})
-```
-
 * **keyframes \(default: false\)**
 
 If you are using a CSS animation library such as animate.css, you can remove unused keyframes by setting the `keyframes` option to `true`.
@@ -163,3 +152,15 @@ new Purgecss({
 }
 ```
 
+* **rejected \(default: false\)**
+
+It can sometimes be more practical to scan through the removed list to see if there's anything obviously wrong.
+If you want to do it, use the `rejected` option.
+
+```javascript
+new Purgecss({
+    content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+    css: ['css/app.css'],
+    rejected: true
+}
+```
