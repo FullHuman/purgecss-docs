@@ -5,6 +5,7 @@
 * [CLI](cli.md)
 * [JavaScript API](javascript-api.md)
 * [With Webpack](with-webpack.md)
+* [With PostCSS](with-postcss.md)
 * [With Gulp](with-gulp.md)
 * [With Grunt](with-grunt.md)
 * [With Rollup](with-rollup.md)

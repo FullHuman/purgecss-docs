@@ -118,6 +118,26 @@ module.exports = {
 }
 ```
 
+## PostCSS
+
+Start by installing the PostCSS plugin as a dev dependency:
+
+```text
+npm i -D @fullhuman/postcss-purgecss
+```
+
+In `postcss.config.js`:
+
+```javascript
+module.exports = {
+  plugins: [
+    purgecss({
+      content: ['./**/*.html']
+    })
+  ]
+}
+```
+
 ## Gulp
 
 Start by installing the Gulp plugin as a dev dependency:
