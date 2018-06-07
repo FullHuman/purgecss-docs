@@ -18,7 +18,7 @@ npm i --save-dev purgecss-with-wordpress
 
 ```javascript
 import Purgecss from 'purgecss'
-import purgecssWordpress from 'purgecss-with-worpress'
+import purgecssWordpress from 'purgecss-with-wordpress'
 
 const purgeCss = new Purgecss({
   content: ['**/*.html'],
