@@ -6,7 +6,7 @@ You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/
 
 ## Created with create-react-app
 
-This example shows how to set up Purgecss with vue-webpack template.  
+This example shows how to set up Purgecss with create-react-app template.  
 Once you initialized your project with `npx create-react-app app`, install the webpack plugin for purgecss:
 
 ```text
