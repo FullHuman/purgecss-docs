@@ -1,6 +1,6 @@
-# Wordpress
+# WordPress
 
-Based on the [gist](https://gist.github.com/frnwtr/5647673bb15ca8893642469d3b400cba) made by @frnwtr, `purgecss-with-wordpress` is a set of templates for Wordpress CMS.
+Based on the [gist](https://gist.github.com/frnwtr/5647673bb15ca8893642469d3b400cba) made by @frnwtr, `purgecss-with-wordpress` is a set of templates for WordPress CMS.
 
 ## Getting Started
 
