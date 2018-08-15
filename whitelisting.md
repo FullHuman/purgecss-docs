@@ -24,11 +24,12 @@ You can whitelist selectors based on a regular expression with `whitelistPattern
 const purgecss = new Purgecss({
     content: [], // content
     css: [], // css
-    whitelistPatterns: [/red$/]
+    whitelistPatterns: [/red$/],
+    whitelistPatternsChildren: [/blue$/]
 })
 ```
 
-In the example, selectors ending with `red` such as `.bg-red` will be left in the final CSS.
+In the example, selectors ending with `red` such as `.bg-red`, and children of selectors ending with `blue` such as `blue p` or `.bg-blue .child-of-bg`, will be left in the final CSS.
 
 Patterns are regular expressions. You can use [regexr](https://regexr.com) to verify the regular expressions correspond to what you are looking for.
 
