@@ -44,7 +44,7 @@ h1 {
 }
 ```
 
-You can use `/* purgecss start ignore` and `/* purgecss end ignore */` to whitelist a range of rules.
+You can use `/* purgecss start ignore */` and `/* purgecss end ignore */` to whitelist a range of rules.
 
 ```css
 /* purgecss start ignore */
