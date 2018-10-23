@@ -29,6 +29,12 @@ const glob = require('glob-all')
 const path = require('path')
 ```
 
+line 31
+
+```javascript
+extractCSS: true
+```
+
 line 44
 
 ```javascript
@@ -52,3 +58,31 @@ if (!isDev) {
 
 This example is importing the tachyons css framework. Without purgecss, the base css file size is **88.2 kB**. Using purgecss, the base css file is **1.56 kB**
 
+## Alternatives
+
+Using the *extractCSS* option Nuxt will create CSS files that will be loaded separately by the browser.
+When generating your application this might be a lot of small files.
+
+To include the CSS into the header of the HTML file you'll need to run the following commands. 
+Please note that using this configuration purgecss will be active in production and development mode.
+
+```text
+npm i --save-dev @fullhuman/postcss-purgecss
+```
+
+```javascript
+import purgecss from '@fullhuman/postcss-purgecss'
+```
+
+```javascript
+build: {
+  postcss: {
+    plugins: [
+      purgecss({
+        content: ['./pages/**/*.vue', './layouts/**/*.vue', './components/**/*.vue'],
+        whitelist: ['html', 'body'],
+      })
+    ]
+  }
+}
+```
