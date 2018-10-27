@@ -4,11 +4,15 @@
 
 There is a community module called [nuxt-purgecss](https://github.com/Developmint/nuxt-purgecss) to make the usage of purgecss with Nuxt as easy as possible. With it, you  
 
+### Example
+
+You can see an example using the `nuxt-purgecss` module [here](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt-module/).
+
 ## Manual configurtion
 
 ### Example
 
-You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt/).
+You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt-manual/).
 
 ### create-nuxt-app and webpack plugin
 
