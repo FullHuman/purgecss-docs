@@ -45,7 +45,7 @@ You can specify content that should be analyzed by Purgecss with an array of fil
 new Purgecss({
     content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
     css: ['css/app.css']
-}
+})
 ```
 
 Purgecss also works with raw content. To do this, you need to pass an object with the `raw` property instead of a filename. To work properly with custom extractors you need to pass the `extension` property along with the raw content.
@@ -62,7 +62,7 @@ new Purgecss({
             raw: 'body { margin: 0 }'
         },
         'css/app.css']
-}
+})
 ```
 
 * **extractors**
@@ -81,7 +81,7 @@ new Purgecss({
         },
         extension: ['html', 'blade']
     }
-}
+})
 ```
 
 More information about extractors [here](extractors.md).
@@ -137,7 +137,7 @@ new Purgecss({
     content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
     css: ['css/app.css'],
     keyframes: true
-}
+})
 ```
 
 * **fontFace \(default: false\)**
@@ -149,7 +149,7 @@ new Purgecss({
     content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
     css: ['css/app.css'],
     fontFace: true
-}
+})
 ```
 
 * **rejected \(default: false\)**
@@ -162,5 +162,5 @@ new Purgecss({
     content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
     css: ['css/app.css'],
     rejected: true
-}
+})
 ```
