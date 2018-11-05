@@ -15,6 +15,7 @@
 * Guides
   * [React](guides/react.md)
   * [Vue](guides/vue.md)
+  * [Next](guides/next.md)
   * [Nuxt](guides/nuxt.md)
   * [Wordpress](guides/wordpress.md)
 
