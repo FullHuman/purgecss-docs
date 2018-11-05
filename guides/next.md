@@ -56,4 +56,4 @@ module.exports = withCss(
 )
 ```
 
-See the page dedicated to the [Purgecss Webpack Plugin](https://www.purgecss.com/with-webpack) for more information.
+See the page dedicated to the [Purgecss Webpack Plugin](../with-webpack.md) for more information.
