@@ -13,7 +13,11 @@ Once you initialized your project with `npx create-react-app app`, install the w
 npm i --save-dev glob-all purgecss-webpack-plugin
 ```
 
-You need to modify the file `webpack.prop.conf.js` by adding the following code:
+## `eject` create-react-app 
+
+You need to [eject](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) in order to expose the webpack configuration offered by original create-react-app
+
+Now, modify the file `config/webpack.prop.conf.js` by adding the following code:
 
 line 16
 
