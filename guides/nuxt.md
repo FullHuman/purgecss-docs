@@ -2,13 +2,13 @@
 
 ## Module
 
-There is a community module called [nuxt-purgecss](https://github.com/Developmint/nuxt-purgecss) to make the usage of purgecss with Nuxt as easy as possible. With it, you  
+There is a community module called [nuxt-purgecss](https://github.com/Developmint/nuxt-purgecss) to make the usage of purgecss with Nuxt as easy as possible. With it, you can remove unused CSS and it can be used as part of your development workflow.
 
 ### Example
 
 You can see an example using the `nuxt-purgecss` module [here](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt-module/).
 
-## Manual configurtion
+## Manual configuration
 
 ### Example
 
@@ -46,7 +46,7 @@ In your `build` segment
 extractCSS: true
 ```
 
-in your `build.extend` function.
+In your `build.extend` function.
 
 ```javascript
 if (!isDev) {
