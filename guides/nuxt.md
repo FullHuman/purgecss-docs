@@ -7,7 +7,7 @@ to the configuration.
 
 ### Example
 
-You can see an example using the `nuxt-purgecss` module [here](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt-module/).
+You can see an example using the `nuxt-purgecss` module [in our examples directory](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt-module/).
 
 ## Manual configuration
 
