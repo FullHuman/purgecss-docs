@@ -2,7 +2,8 @@
 
 ## Module
 
-There is a community module called [nuxt-purgecss](https://github.com/Developmint/nuxt-purgecss) to make the usage of purgecss with Nuxt as easy as possible. With it, you  
+There is a community module called [nuxt-purgecss](https://github.com/Developmint/nuxt-purgecss) to make the usage of purgecss with Nuxt as easy as possible. With it's fitting defaults, you only need to make a few changes (or none at all)
+to the configuration.
 
 ### Example
 
