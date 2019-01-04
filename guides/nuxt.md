@@ -47,7 +47,7 @@ In your `build` segment
 extractCSS: true
 ```
 
-in your `build.extend` function.
+In your `build.extend` function.
 
 ```javascript
 if (!isDev) {
