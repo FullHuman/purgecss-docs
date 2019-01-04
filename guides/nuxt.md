@@ -8,7 +8,7 @@ There is a community module called [nuxt-purgecss](https://github.com/Developmin
 
 You can see an example using the `nuxt-purgecss` module [here](https://github.com/FullHuman/purgecss/tree/master/examples/with-nuxt-module/).
 
-## Manual configurtion
+## Manual configuration
 
 ### Example
 
