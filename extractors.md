@@ -10,7 +10,7 @@ Purgecss provides a default extractor that is working with all types of files bu
 
 The default extractor considers every word of a file as a selector. The default extractor has a few limitations:
 
-* Do not consider special characters such as `@`, `:`, `/`
+* Does not consider special characters such as `@`, `:`, `/`
 
 ## Using an extractor
 
