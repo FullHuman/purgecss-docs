@@ -73,14 +73,16 @@ Purgecss can be adapted to suit your needs. If you notice a lot of unused CSS is
 new Purgecss({
     content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
     css: ['css/app.css'],
-    extractors: {
-        extractor: class {
-            static extract(content) {
-                content.match(/a-Z/) || []
-            }
-        },
-        extension: ['html', 'blade']
-    }
+    extractors: [
+        {
+            extractor: class {
+                static extract(content) {
+                    return content.match(/a-Z/) || []
+                }
+            },
+            extensions: ['html', 'blade']
+        }
+    ]
 })
 ```
 
