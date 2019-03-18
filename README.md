@@ -56,7 +56,7 @@ You can then use Purgecss inside a JavaScript file.
 
 ```javascript
 import Purgecss from 'purgecss'
-const purgeCss = new Purgecss({
+const purgecss = new Purgecss({
   content: ['**/*.html'],
   css: ['**/*.css']
 })
