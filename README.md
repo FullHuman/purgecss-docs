@@ -16,41 +16,39 @@ You can install the CLI in two ways. By installing Purgecss globally or using np
 
 ### Install globally
 
-```text
+```bash
 npm i -g purgecss
 ```
 
-You can then use it with
+Run Purgecss from the terminal:
 
-```text
+```bash
 purgecss --css <css> --content <content> [option]
 ```
 
-### Using npx
+### Use npx
 
 [npx](https://www.npmjs.com/package/npx) allows you to run the CLI locally without installing the package globally.
 
-You can install Purgecss as a dev dependency
+Install Purgecss as a dev dependency:
 
-```text
+```bash
 npm i -D purgecss
 ```
 
-You can then use it with
+Run Purgecss from the terminal:
 
-```text
+```bash
 npx purgecss --css <css> --content <content> [option]
 ```
 
 ## JavaScript API
 
-Start by installing Purgecss as a dev dependency.
+Install Purgecss as a dev dependency:
 
-```text
+```bash
 npm i -D purgecss
 ```
-
-You can then use Purgecss inside a JavaScript file.
 
 ### ES6 with import
 
@@ -76,11 +74,13 @@ var purgecssResult = purgecss.purge()
 
 ## Webpack
 
-Start by installing the plugin as a dev dependency:
+Install the Webpack plugin as a dev dependency:
 
-```text
+```bash
 npm i -D purgecss-webpack-plugin
 ```
+
+Use the plugin in your Webpack config:
 
 ```javascript
 const path = require('path')
@@ -120,13 +120,13 @@ module.exports = {
 
 ## PostCSS
 
-Start by installing the PostCSS plugin as a dev dependency:
+Install the PostCSS plugin as a dev dependency:
 
-```text
+```bash
 npm i -D @fullhuman/postcss-purgecss
 ```
 
-In `postcss.config.js`:
+Use the plugin in your PostCSS config:
 
 ```javascript
 module.exports = {
@@ -140,11 +140,13 @@ module.exports = {
 
 ## Gulp
 
-Start by installing the Gulp plugin as a dev dependency:
+Install the Gulp plugin as a dev dependency:
 
-```text
+```bash
 npm i -D gulp-purgecss
 ```
+
+Use the plugin in your Gulpfile:
 
 ```javascript
 const gulp = require('gulp')
@@ -164,11 +166,13 @@ gulp.task('purgecss', () => {
 
 ## Grunt
 
-Start by installing the Grunt plugin as a dev dependency:
+Install the Grunt plugin as a dev dependency:
 
-```text
+```bash
 npm i -D grunt-purgecss
 ```
+
+Use the plugin in your Gruntfile:
 
 ```javascript
 module.exports = grunt => {
@@ -193,11 +197,13 @@ module.exports = grunt => {
 
 ## Rollup
 
-Start by installing the Rollup plugin as a dev dependency:
+Install the Rollup plugin as a dev dependency:
 
-```text
+```bash
 npm i -D rollup-plugin-purgecss
 ```
+
+Use the plugin in your Rollup config:
 
 ```javascript
 import { rollup } from 'rollup'
