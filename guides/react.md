@@ -17,9 +17,8 @@ npm i --save-dev glob-all purgecss-webpack-plugin
 
 You need to [eject](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) in order to expose the webpack configuration offered by original create-react-app
 
-Now, modify the file `config/webpack.prop.conf.js` by adding the following code:
+Now, modify the file `config/webpack.prop.conf.js` by adding the following code with the rest of the imports:
 
-line 16
 
 ```javascript
 // import Purgecss webpack plugin and glob-all
@@ -27,7 +26,7 @@ const PurgecssPlugin = require('purgecss-webpack-plugin')
 const glob = require('glob-all')
 ```
 
-line 293
+...and directly before `new ManifestPlugin(...)` in the plugins list, add this:
 
 ```javascript
     // Remove unused css with Purgecss. See https://github.com/FullHuman/purgecss
