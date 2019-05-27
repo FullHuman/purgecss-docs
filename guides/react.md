@@ -17,7 +17,7 @@ npm i --save-dev glob-all purgecss-webpack-plugin
 
 You need to [eject](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) in order to expose the webpack configuration offered by original create-react-app
 
-Now, modify the file `config/webpack.prop.conf.js` by adding the following code with the rest of the imports:
+Now, modify the file `config/webpack.prod.conf.js` by adding the following code with the rest of the imports:
 
 
 ```javascript
