@@ -129,6 +129,8 @@ npm i -D @fullhuman/postcss-purgecss
 Use the plugin in your PostCSS config:
 
 ```javascript
+const purgecss = require('@fullhuman/postcss-purgecss')
+
 module.exports = {
   plugins: [
     purgecss({
