@@ -13,7 +13,17 @@ Once you initialized your project with `npx create-react-app app`, install the w
 npm i --save-dev glob-all purgecss-webpack-plugin
 ```
 
-## `eject` create-react-app 
+### Method 1 - Run Purgecss CLI in `postbuild`
+
+Add the following code in **package.json**
+
+```json
+"scripts": {
+  "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css"
+},
+```
+
+### Method 2 - `eject` create-react-app 
 
 You need to [eject](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) in order to expose the webpack configuration offered by original create-react-app
 
