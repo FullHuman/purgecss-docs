@@ -13,7 +13,7 @@ Once you initialized your project with `npx create-react-app app`, install the w
 npm i --save-dev glob-all purgecss-webpack-plugin
 ```
 
-### Method 1 - Run Purgecss CLI in `postbuild`
+### Method 1 - Run PurgeCSS CLI in `postbuild`
 
 Add the following code in **package.json**
 
