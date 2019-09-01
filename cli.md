@@ -1,6 +1,6 @@
 # CLI
 
-Purgecss is available via a CLI. You can use the CLI by itself or with a configuration file.
+PurgeCSS is available via a CLI. You can use the CLI by itself or with a configuration file.
 
 ## Installation
 
@@ -35,7 +35,7 @@ purgecss --css css/app.css css/palette.css --content src/index.html
 
 ### --content
 
-You can specify content that should be analyzed by Purgecss with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). These files can be HTML, Pug, Blade, etc.
+You can specify content that should be analyzed by PurgeCSS with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). These files can be HTML, Pug, Blade, etc.
 
 ```text
 purgecss --css css/app.css --content src/index.html src/**/*.js
@@ -59,7 +59,7 @@ purgecss --css css/app.css --content src/index.html src/**/*.js --out build/css/
 
 ### --whitelist
 
-If you wish to prevent Purgecss from removing a specific CSS selector, you can whitelist it.
+If you wish to prevent PurgeCSS from removing a specific CSS selector, you can whitelist it.
 
 ```text
 purgecss --css css/app.css --content src/index.html --whitelist classnameToWhitelist

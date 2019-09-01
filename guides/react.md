@@ -6,8 +6,8 @@ You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/
 
 ## Created with create-react-app
 
-This example shows how to set up Purgecss with create-react-app template.  
-Once you initialized your project with `npx create-react-app app`, install the webpack plugin for purgecss:
+This example shows how to set up PurgeCSS with create-react-app template.  
+Once you initialized your project with `npx create-react-app app`, install the webpack plugin for PurgeCSS:
 
 ```text
 npm i --save-dev glob-all purgecss-webpack-plugin
@@ -21,7 +21,7 @@ Now, modify the file `config/webpack.prod.conf.js` by adding the following code 
 
 
 ```javascript
-// import Purgecss webpack plugin and glob-all
+// import PurgeCSS webpack plugin and glob-all
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 const glob = require('glob-all')
 ```
@@ -29,8 +29,8 @@ const glob = require('glob-all')
 ...and directly before `new ManifestPlugin(...)` in the plugins list, add this:
 
 ```javascript
-    // Remove unused css with Purgecss. See https://github.com/FullHuman/purgecss
-    // for more information about purgecss.
+    // Remove unused css with PurgeCSS. See https://github.com/FullHuman/purgecss
+    // for more information about PurgeCSS.
     // Specify the path of the html files and source files
     new PurgecssPlugin({
       paths: [paths.appHtml, ...glob.sync(`${paths.appSrc}/*`)]
@@ -40,6 +40,6 @@ const glob = require('glob-all')
 ## Results
 
 This example is importing the bootstrap css framework.  
-Without purgecss, the base css file size is **138 kB**.  
-Using purgecss, the base css file size is **4 kB**
+Without PurgeCSS, the base css file size is **138 kB**.  
+Using PurgeCSS, the base css file size is **4 kB**
 

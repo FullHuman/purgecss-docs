@@ -6,7 +6,7 @@ Based on the [gist](https://gist.github.com/frnwtr/5647673bb15ca8893642469d3b400
 
 ### Installation
 
-You need to install [purgecss](https://github.com/FullHuman/purgecss) first.
+You need to install [PurgeCSS](https://github.com/FullHuman/purgecss) first.
 
 Install `purgecss-with-wordpress`:
 

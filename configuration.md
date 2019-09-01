@@ -1,6 +1,6 @@
 # Configuration
 
-Purgecss has a list of options that allow you to customize its behavior. Customization can improve the performance and efficiency of Purgecss. You can create a configuration file with the following options.
+PurgeCSS has a list of options that allow you to customize its behavior. Customization can improve the performance and efficiency of PurgeCSS. You can create a configuration file with the following options.
 
 ## Configuration file
 
@@ -13,7 +13,7 @@ module.exports = {
 }
 ```
 
-You can then use Purgecss with the file:
+You can then use PurgeCSS with the file:
 
 ```javascript
 const purgecss = new Purgecss()
@@ -39,7 +39,7 @@ const purgecss = new Purgecss('./purgecss.config.js')
 
 * **content**
 
-You can specify content that should be analyzed by Purgecss with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). The files can be HTML, Pug, Blade, etc.
+You can specify content that should be analyzed by PurgeCSS with an array of filenames or [globs](https://github.com/isaacs/node-glob/blob/master/README.md#glob-primer). The files can be HTML, Pug, Blade, etc.
 
 ```javascript
 new Purgecss({
@@ -48,7 +48,7 @@ new Purgecss({
 })
 ```
 
-Purgecss also works with raw content. To do this, you need to pass an object with the `raw` property instead of a filename. To work properly with custom extractors you need to pass the `extension` property along with the raw content.
+PurgeCSS also works with raw content. To do this, you need to pass an object with the `raw` property instead of a filename. To work properly with custom extractors you need to pass the `extension` property along with the raw content.
 
 ```javascript
 new Purgecss({
@@ -67,7 +67,7 @@ new Purgecss({
 
 * **extractors**
 
-Purgecss can be adapted to suit your needs. If you notice a lot of unused CSS is not being removed, you might want to use a custom extractor.
+PurgeCSS can be adapted to suit your needs. If you notice a lot of unused CSS is not being removed, you might want to use a custom extractor.
 
 ```javascript
 new Purgecss({
@@ -90,7 +90,7 @@ More information about extractors [here](extractors.md).
 
 * **whitelist**
 
-You can whitelist selectors to stop Purgecss from removing them from your CSS. This can be accomplished with the options `whitelist` and `whitelistPatterns`.
+You can whitelist selectors to stop PurgeCSS from removing them from your CSS. This can be accomplished with the options `whitelist` and `whitelistPatterns`.
 
 ```javascript
 const purgecss = new Purgecss({

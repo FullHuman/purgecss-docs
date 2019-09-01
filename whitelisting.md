@@ -1,6 +1,6 @@
 # Whitelisting
 
-You can whitelist selectors to stop purgecss from removing them from your CSS. This can be accomplished with the purgecss options `whitelist` and `whitelistPatterns`, or directly in your CSS with a special comment.
+You can whitelist selectors to stop PurgeCSS from removing them from your CSS. This can be accomplished with the PurgeCSS options `whitelist` and `whitelistPatterns`, or directly in your CSS with a special comment.
 
 ## Specific selectors
 

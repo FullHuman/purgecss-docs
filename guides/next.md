@@ -2,7 +2,7 @@
 
 ## Module
 
-To simply configure purgecss with next.js, you can use [next-purgecss](https://github.com/lucleray/next-purgecss).
+To simply configure PurgeCSS with next.js, you can use [next-purgecss](https://github.com/lucleray/next-purgecss).
 
 ## Installation
 
@@ -42,7 +42,7 @@ module.exports = withCss(withPurgeCss())
 
 By default, this plugin will scan `components` and `pages` directories for classnames.
 
-Under the hood, `next-purgecss` uses the Purgecss Webpack Plugin. You can pass custom options to the plugin 
+Under the hood, `next-purgecss` uses the PurgeCSS Webpack Plugin. You can pass custom options to the plugin 
 by defining `purgeCss` object in your `next.config.js` :
 
 ```js
@@ -56,4 +56,4 @@ module.exports = withCss(
 )
 ```
 
-See the page dedicated to the [Purgecss Webpack Plugin](../with-webpack.md) for more information.
+See the page dedicated to the [PurgeCSS Webpack Plugin](../with-webpack.md) for more information.

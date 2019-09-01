@@ -1,8 +1,8 @@
 # Introduction
 
-[Purgecss](https://github.com/FullHuman/purgecss) is a tool to remove unused CSS. It can be used as part of your development workflow. Purgecss comes with a JavaScript API, a CLI, and plugins for popular build tools.
+[PurgeCSS](https://github.com/FullHuman/purgecss) is a tool to remove unused CSS. It can be used as part of your development workflow. PurgeCSS comes with a JavaScript API, a CLI, and plugins for popular build tools.
 
-Here are a couple of ways to use Purgecss:
+Here are a couple of ways to use PurgeCSS:
 
 * [CLI](./#cli)
 * [JavaScript API](./#javascript-api)
@@ -12,7 +12,7 @@ Here are a couple of ways to use Purgecss:
 
 ## CLI
 
-You can install the CLI in two ways. By installing Purgecss globally or using npx.
+You can install the CLI in two ways. By installing PurgeCSS globally or using npx.
 
 ### Install globally
 
@@ -20,7 +20,7 @@ You can install the CLI in two ways. By installing Purgecss globally or using np
 npm i -g purgecss
 ```
 
-Run Purgecss from the terminal:
+Run PurgeCSS from the terminal:
 
 ```bash
 purgecss --css <css> --content <content> [option]
@@ -30,13 +30,13 @@ purgecss --css <css> --content <content> [option]
 
 [npx](https://www.npmjs.com/package/npx) allows you to run the CLI locally without installing the package globally.
 
-Install Purgecss as a dev dependency:
+Install PurgeCSS as a dev dependency:
 
 ```bash
 npm i -D purgecss
 ```
 
-Run Purgecss from the terminal:
+Run PurgeCSS from the terminal:
 
 ```bash
 npx purgecss --css <css> --content <content> [option]
@@ -44,7 +44,7 @@ npx purgecss --css <css> --content <content> [option]
 
 ## JavaScript API
 
-Install Purgecss as a dev dependency:
+Install PurgeCSS as a dev dependency:
 
 ```bash
 npm i -D purgecss

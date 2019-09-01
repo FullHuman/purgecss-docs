@@ -1,12 +1,12 @@
 # Extractors
 
-Purgecss can be adapted to suit your need. If you notice a lot of unused css is not being removed, you might want to use a specific extractor.
+PurgeCSS can be adapted to suit your need. If you notice a lot of unused css is not being removed, you might want to use a specific extractor.
 
-Purgecss relies on extractors to get the list of selector used in a file. There are multiples types of files that can contains selectors such as html files, templating files like pug, or even javascript file.
+PurgeCSS relies on extractors to get the list of selector used in a file. There are multiples types of files that can contains selectors such as html files, templating files like pug, or even javascript file.
 
 ## Default extractor
 
-Purgecss provides a default extractor that is working with all types of files but can be limited and not fit exactly the type of files or css framework that you are using.
+PurgeCSS provides a default extractor that is working with all types of files but can be limited and not fit exactly the type of files or css framework that you are using.
 
 The default extractor considers every word of a file as a selector. The default extractor has a few limitations:
 
@@ -14,11 +14,11 @@ The default extractor considers every word of a file as a selector. The default 
 
 ## Using an extractor
 
-Using an extractor can be useful if you notice that purgecss does not remove enough unused css or removes used ones.
+Using an extractor can be useful if you notice that PurgeCSS does not remove enough unused css or removes used ones.
 
 Using a specific extractor for an extension should provide you with the best accuracy. If you want to purge exclusively html files you might want to consider the `purge-from-html` extractor.
 
-You can use an extractor by settings the extractors option in the purgecss config file.
+You can use an extractor by settings the extractors option in the PurgeCSS config file.
 
 ```javascript
 import purgeJs from 'purge-from-js'
