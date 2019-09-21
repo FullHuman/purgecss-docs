@@ -4,7 +4,7 @@ This example shows how to set up PurgeCSS with `create-razzle-app` template.
 ## Installation
 
 ### 1. Install the packages
-Once you initialized your project with `npx create-razzle-app my-app`, install the purgecss plugin:
+Once you initialized your project with `npx create-razzle-app my-app`, install the PurgeCSS plugin:
 
 if you're using `npm`:
 
@@ -40,7 +40,7 @@ module.exports = {
 ## Options
 
 - only <br>
-  You can specify entrypoints to the `purgecss` with the option `only`:
+  You can specify entrypoints to the PurgeCSS with the option `only`:
 
   ```
   // razzle.config.js
@@ -120,7 +120,7 @@ module.exports = {
   ```
 
 - fontFace (default: false) <br>
-  If there are any unused @font-face rules in your css, you can remove them by setting the fontFace option to true
+  If there are any unused `@font-face` rules in your css, you can remove them by setting the fontFace option to true
 
   ```
   // razzle.config.js
