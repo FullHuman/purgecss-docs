@@ -7,7 +7,9 @@ Here are a couple of ways to use PurgeCSS:
 * [CLI](./#cli)
 * [JavaScript API](./#javascript-api)
 * [Webpack](./#webpack)
+* [PostCSS](./#postcss)
 * [Gulp](./#gulp)
+* [Grunt](./#grunt)
 * [Rollup](./#rollup)
 
 ## CLI
