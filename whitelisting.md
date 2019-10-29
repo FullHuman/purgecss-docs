@@ -45,6 +45,15 @@ h1 {
 }
 ```
 
+Use `/* purgecss ignore current */` to whitelist the current rule.
+
+```css
+h1 {
+    /* purgecss ignore current */
+    color: blue;
+}
+```
+
 You can use `/* purgecss start ignore */` and `/* purgecss end ignore */` to whitelist a range of rules.
 
 ```css
