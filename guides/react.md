@@ -7,13 +7,34 @@ You can see an example [here](https://github.com/FullHuman/purgecss/tree/master/
 ## Created with create-react-app
 
 This example shows how to set up PurgeCSS with create-react-app template.  
-Once you initialized your project with `npx create-react-app app`, install the webpack plugin for PurgeCSS:
 
-```text
-npm i --save-dev glob-all purgecss-webpack-plugin
+### Method 1 - Use `craco`
+
+Custom PostCSS plugins (including PurgeCSS) can be added to Create React App apps using [craco](https://github.com/gsoft-inc/craco/). Follow the [craco installation instructions](https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#installation), then install the `PurgeCSS` PostCSS plugin and add it to the craco config:
+
+```sh
+npm i --save-dev @fullhuman/postcss-purgecss
 ```
 
-### Method 1 - Run PurgeCSS CLI in `postbuild`
+```js
+// craco.config.js
+const purgecss = require('@fullhuman/postcss-purgecss');
+
+module.exports = {
+  style: {
+    postcss: {
+      plugins: [
+        purgecss({
+          content: ['./src/**/*.html', './src/**/*.tsx', './src/**/*.ts'],
+        }),
+      ],
+    },
+  },
+};
+
+```
+
+### Method 2 - Run PurgeCSS CLI in `postbuild`
 
 Add the following code in **package.json**
 
@@ -23,9 +44,15 @@ Add the following code in **package.json**
 },
 ```
 
-### Method 2 - `eject` create-react-app 
+### Method 3 - `eject` create-react-app 
 
 You need to [eject](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) in order to expose the webpack configuration offered by original create-react-app
+
+Install the webpack plugin for PurgeCSS:
+
+```text
+npm i --save-dev glob-all purgecss-webpack-plugin
+```
 
 Now, modify the file `config/webpack.prod.conf.js` by adding the following code with the rest of the imports:
 
