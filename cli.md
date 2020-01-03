@@ -49,6 +49,9 @@ You can use the CLI with a [configuration file](configuration.md). Use `--config
 purgecss --config ./purgecss.config.js
 ```
 
+If other options are given on the command line, they will over ride the
+equivalent information in the configuration file.
+
 ### --out
 
 By default, the CLI outputs the result in the console. If you wish to return the CSS as files, specify the directory to write the purified CSS files to.
